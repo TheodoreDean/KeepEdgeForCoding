@@ -54,6 +54,10 @@ int main () {
 	l3->value = 3;
 	k1->next->next = l3;
 	Result = addTwoNumbers(k1,k1);
+	while (k1 != NULL){
+	printf("the k1 is %d \n",k1->value);
+	k1 = k1->value;
+	}
 	printf ("restult for k1 is %d %d %d\n",k1->value,k1->next->value,k1->next->next->value);
 	printf ("Result's first is %d %d %d\n",Result->value,Result->next->value,Result->next->next->value);
 	return 0;

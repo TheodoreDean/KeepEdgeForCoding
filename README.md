@@ -12,5 +12,16 @@ struct ListNode {
 
 ```
 Please find the detailed descriptions here 
-*[https://github.com/TheodoreDean/KeepEdgeForCoding/blob/master/Units/001_Add_two_Numbers/001_Readme.md]
+[https://github.com/TheodoreDean/KeepEdgeForCoding/blob/master/Units/001_Add_two_Numbers/001_Readme.md]
 ***
+
+### 002 Substrings
+> find the length of the longest substring without repeating characters
+
+```
+//use the ascii number as the index of addressTable
+
+temp = addressTable[*end];//treat the ascii as the index of the array
+addressTable[*end]=end;//assign the array[ascii]
+
+```

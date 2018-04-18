@@ -18,6 +18,7 @@ Please find the detailed descriptions here
 ### 002 Substrings
 > find the length of the longest substring without repeating characters
 
+>![find the substrings](https://github.com/TheodoreDean/KeepEdgeForCoding/blob/master/Units/002_longestSubstring/A7A03F11-2D2A-49B5-B443-1F85C5C644F5.png)
 ```
 //use the ascii number as the index of addressTable
 

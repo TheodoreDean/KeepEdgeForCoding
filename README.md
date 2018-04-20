@@ -26,3 +26,20 @@ temp = addressTable[*end];//treat the ascii as the index of the array
 addressTable[*end]=end;//assign the array[ascii]
 
 ```
+***
+### 005 find palindromic substrings
+> find the longest palindromic substrings
+
+> essence of the code
+```
+if P[ i’ ] ≤ R – i,
+then P[ i ] ← P[ i’ ]
+else P[ i ] ≥ P[ i’ ]. (Which we have to expand past the right edge (R) to find P[ i ].
+
+```
+
+Please find the manacher's algorithm as below:
+
+[https://articles.leetcode.com/longest-palindromic-substring-part-ii/]
+
+[http://www.felix021.com/blog/read.php?2040]

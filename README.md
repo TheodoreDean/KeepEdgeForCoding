@@ -43,3 +43,17 @@ Please find the manacher's algorithm as below:
 [https://articles.leetcode.com/longest-palindromic-substring-part-ii/]
 
 [http://www.felix021.com/blog/read.php?2040]
+
+### 006 palindrome number
+> Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+```
+ while(x > revertedNumber)
+    {
+        revertedNumber = revertedNumber * 10 + (x % 10);
+        x /= 10;
+    }
+```
+> Integer Overflow
+
+
+

@@ -55,5 +55,24 @@ Please find the manacher's algorithm as below:
 ```
 > Integer Overflow
 
+### 008 getopt demo
+> simple example of getopt() and extern char* optarg;
+                                 extern int optind;
+                                 extern int opteer;
+                                 extern int optopt;
+```
+while ((oc = getopt(argc,argv,"pxl:h")) != -1)
+	{ switch(oc)
+          {
+            case 'a':
+            case 'b':
+            ...
+            case '?':
+           }
+      }
+```
+More descriptions:
+[https://blog.csdn.net/men_wen/article/details/61934376]
+[https://blog.csdn.net/huangxiaohu_coder/article/details/7475156]
 
 

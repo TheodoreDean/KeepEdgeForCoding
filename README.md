@@ -78,6 +78,12 @@ More descriptions:
 ### 009 tinyhelloworld
 > the c code without main() and header file
 > Please find details as below:
+
 [https://github.com/TheodoreDean/KeepEdgeForCoding/blob/master/Units/009_tinyHelloWorld/ReadMe.md]
 
+### 010 leakmemory
+> basic leak of memory by printf(), alternative funcations such as fprintf, vprintf,vsnprintf,and so on
 
+>please find details as below:
+
+[https://ctf-wiki.github.io/ctf-wiki/pwn/fmtstr/fmtstr_intro/]

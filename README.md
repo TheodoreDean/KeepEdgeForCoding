@@ -84,6 +84,6 @@ More descriptions:
 ### 010 leakmemory
 > basic leak of memory by printf(), alternative funcations such as fprintf, vprintf,vsnprintf,and so on
 
->please find details as below:
+> please find details as below:
 
-[https://ctf-wiki.github.io/ctf-wiki/pwn/fmtstr/fmtstr_intro/]
+[https://ctf-wiki.github.io/ctf-wiki/pwn/linux/fmtstr/fmtstr_exploit/]

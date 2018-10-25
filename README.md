@@ -87,3 +87,10 @@ More descriptions:
 > please find details as below:
 
 [https://ctf-wiki.github.io/ctf-wiki/pwn/linux/fmtstr/fmtstr_exploit/]
+
+### 014 stackoverflow $ebp
+> By modify the $ebp of the main() intend to run the "unexpected" code
+
+> please find details as below:
+
+[https://github.com/TheodoreDean/KeepEdgeForCoding/tree/master/Units/014_ebpOverflow/Readme.md]

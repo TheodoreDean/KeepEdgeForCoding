@@ -25,7 +25,7 @@ export PATH=$PATH:$/TO/UR/DIR/BIN/
 > When typing 
 
 ```
-ehco $PATH
+echo  $PATH
 ```
 
 > The order of two settings( PATH ) are different. Sometimes it may have bad influence on compiling project.

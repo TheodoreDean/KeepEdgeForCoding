@@ -32,4 +32,14 @@ echo  $PATH
 
 > So basically order matters!!!
 
+## root user cannot open cutecom in Ubuntu 18.04.1
+
+# here is the solution
+> firstly login as normal user
+> secondly type
+```
+xhost +
+```
+> this step is to disable the access control
+> finally login as root user and run cutecom 
 

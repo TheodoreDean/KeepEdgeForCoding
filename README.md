@@ -94,3 +94,9 @@ More descriptions:
 > please find details as below:
 
 [https://github.com/TheodoreDean/KeepEdgeForCoding/tree/master/Units/014_ebpOverflow/Readme.md]
+
+### 017 hping3 commands and attack script
+> By manipulating the packets to create attack scenarions
+
+> Please find it as below:
+[https://github.com/TheodoreDean/KeepEdgeForCoding/tree/master/Units/017_hping3_testscript]

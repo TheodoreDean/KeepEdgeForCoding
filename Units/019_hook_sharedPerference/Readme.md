@@ -19,14 +19,17 @@ please refer to
 
 #### how to write JS code to hook #####
 >please refer to the 
-[]
+[https://frida.re/docs/examples/android/]
 
 #### steps ####
 >1. run frida server in /data/local/tmp after connecting with simulator from MAC by 
 
 ```
 adb connect 127.0.0.1:5555
-
+#if 0 
+//if necessary
+adb -s emulator-5554 shell
+#end if
 ```
 >smoke-test 
 ```

@@ -14,6 +14,10 @@
 
 > basically, the idea to enumerate every place call  new emojiInfo(or any other key word for dice) and determin which is the one for dice.  
 refer to [https://blog.sari3l.com/posts/5da99ec5/]
+![search for the random function1](https://raw.githubusercontent.com/TheodoreDean/KeepEdgeForCoding/master/Units/020_hook_random_wechat/Screen%20Shot%202021-06-03%20at%201.59.59%20PM.png)
+![search for the random function2](https://github.com/TheodoreDean/KeepEdgeForCoding/blob/master/Units/020_hook_random_wechat/Screen%20Shot%202021-06-03%20at%202.00.14%20PM.png)
+![search for the random function3](https://github.com/TheodoreDean/KeepEdgeForCoding/blob/master/Units/020_hook_random_wechat/Screen%20Shot%202021-06-03%20at%202.00.52%20PM.png)
+
 > the by.jV was found for the key operation for dice
 > at com.tencent.mm.sdk.platformtools.by ,jV() call random(), which means by.jV need to hook
 

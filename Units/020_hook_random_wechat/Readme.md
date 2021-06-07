@@ -5,7 +5,9 @@
 
 > adb frida
 
-> wechat apk file
+> wechat apk file 
+> 链接: [https://pan.baidu.com/s/1t6tfuktEVVFygKWoxkVA-Q] 
+> 密码: hw6c
 
 #### analysis steps ####
 > decomplie the apk file by jadx-gui

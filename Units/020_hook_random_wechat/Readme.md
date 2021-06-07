@@ -5,12 +5,16 @@
 
 > adb frida
 
-> wechat apk file 
+> wechat apk file (testing version)
 > 链接: [https://pan.baidu.com/s/1t6tfuktEVVFygKWoxkVA-Q] 
 > 密码: hw6c
 
+> wechat 7.0.22 apk file
+> 链接: [https://pan.baidu.com/s/1j1cK2ulFHLLq-Cujifs71Q] 
+> 密码: pbw2
+
 #### analysis steps ####
-> decomplie the apk file by jadx-gui
+> decomplie the testing apk file by jadx-gui
 
 > address the position where the random() are used(that's hardest part)
 
@@ -40,6 +44,7 @@ send("end")
 });
 
 ``` 
+> samilarly, wechat 7.0.22(to 8.0.6) has the same random generation function just like by.jY(Util.getIntRandom).
 
 #### execution steps ####
 > open the MUMU simulator 

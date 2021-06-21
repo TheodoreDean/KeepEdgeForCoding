@@ -13,6 +13,9 @@
 > 链接: [https://pan.baidu.com/s/1j1cK2ulFHLLq-Cujifs71Q] 
 > 密码: pbw2
 
+> jadx-gui 1.2.0
+> Path: /usr/local/bin/jadx-gui
+
 #### analysis steps ####
 > decomplie the testing apk file by jadx-gui
 

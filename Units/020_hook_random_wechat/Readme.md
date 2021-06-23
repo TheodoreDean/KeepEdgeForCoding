@@ -56,6 +56,7 @@ send("end")
 ```
 adb connect 127.0.0.1:5555
 adb shell
+adb -s emulator-5554 shell //if necessary 
 ```
 
 > execute the frida server

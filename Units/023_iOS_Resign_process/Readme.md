@@ -1,6 +1,6 @@
-#####Re-sign IPA file and install on an unjailbreaked iPhone ###
+### Re-sign IPA file and install on an unjailbreaked iPhone 
 
-#####The whole idea it to change the signature file in the IPA, then resign it with developer provision file or paid developer file ###
+### The whole idea it to change the signature file in the IPA, then resign it with developer provision file or paid developer file
 
 
 #### Procedure ####

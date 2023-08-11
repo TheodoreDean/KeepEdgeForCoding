@@ -60,6 +60,9 @@ adb -s emulator-5554 shell //if necessary
 ```
 
 > execute the frida server
+
+> Please be careful about the frida-server version (x86 or x64 depending on architecture of the device or emulator)
+
 ```
 cd /data/local/tmp
 ./frida-server

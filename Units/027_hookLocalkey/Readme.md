@@ -54,7 +54,7 @@ frida -U -f com.philips.dachinaiot -l deviceRspBean.js
 
 > 4 the result can be seen
 
-![hooked localkey]()
+![hooked localkey](https://github.com/TheodoreDean/KeepEdgeForCoding/blob/master/Units/027_hookLocalkey/philips%20app%20hook%20local%20key.png)
 
 
 

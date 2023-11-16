@@ -51,6 +51,8 @@ fastboot flash boot_b  magisk_patched-XXXXX_XXXXX.img
 > generally refer to [https://baijiahao.baidu.com/s?id=1771528355850111229&wfr=spider&for=pc]
 
 > 1. Install TrollStore following [https://github.com/opa334/TrollStore]
+> Note: TrollStore can be used to install any IPA files on unjailbreaked ios15 device.(The IPA file should be transfered by Safari via http.server on another PC in the same LAN)
+
 > 2. Install Dopamine following [https://ellekit.space/dopamine/]
 > 3. Select Sileo
 > 4. Note: Open the sileo and Reload the software resource page

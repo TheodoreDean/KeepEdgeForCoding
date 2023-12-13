@@ -1,4 +1,4 @@
-# Hook local key by using Frida
+Hook local key by using Frida
 
 
 ### Environment and tools

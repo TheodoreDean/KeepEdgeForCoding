@@ -60,4 +60,3 @@ frida -U -f com.philips.dachinaiot -l deviceRspBean.js
 
 
 
-

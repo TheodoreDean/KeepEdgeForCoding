@@ -4,10 +4,10 @@ Java.perform(function () {
 
 //var be= Java.use("com.tuya.smart.home.sdk.bean.ActiveDmDeviceBean").$new();
 
-//var be= Java.use("com.thingclips.smart.interior.device.bean.DeviceRespBean").$new();
+var be= Java.use("com.thingclips.smart.interior.device.bean.DeviceRespBean").$new();
 // For tuya smart 5.7.0
     
-var be= Java.use("com.tuya.smart.interior.device.bean.DeviceRespBean");
+//var be= Java.use("com.tuya.smart.interior.device.bean.DeviceRespBean");
 
 //console.log("static_bool_var:", FridaActivity3.static_bool_var.value);
 

@@ -67,7 +67,11 @@ wget -O - https://install.hacs.xyz | bash -
 ```
 
 > 4. Get the token and configure it in the Xiaomi Miot and Homekit bridge.
-
+```
+Use one homekit bridge via home assistant
+one bridge maps to multiple IoT devices
+in iOS home app, set up all IoT devices's name and control it.
+```
 
 > 5. Use iOS device to scan the QR code in homekit bridge
 

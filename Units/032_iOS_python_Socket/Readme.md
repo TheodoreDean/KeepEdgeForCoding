@@ -63,13 +63,15 @@ data format
 ```
 
 > step1  send client hello packet 21 31 00 20 FF FF FF FF
-[]
+![step1](https://github.com/TheodoreDean/KeepEdgeForCoding/blob/master/Units/032_iOS_python_Socket/step1%20client%20hello.png)
 
 > step2 send handshake message and update the timestamp(time in hello packet+1)
 
-[]
+![step2](https://github.com/TheodoreDean/KeepEdgeForCoding/blob/master/Units/032_iOS_python_Socket/step2%20handshake.png)
 
 > step3 Send an actual control command
+![step3](https://github.com/TheodoreDean/KeepEdgeForCoding/blob/master/Units/032_iOS_python_Socket/step3%20controll%20command.png)
+
 
 ```
 e.g.,  plaintext as below

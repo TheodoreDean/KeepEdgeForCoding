@@ -43,19 +43,20 @@ docker container update --restart=always 容器ID
 docker images
 
 
-docker start ID
+docker start CONTAINER ID
 // Please be aware that the ID of one instance is unique. This command will start/restart the specific image.
 
 docker ps 
-//get the ID of the images
+//check the running container and get the ID of the container
 
 docker exec -it ID /bin/bash 
+// enter the inside of the container
 
 ```
 
-then install the HACS
 
-[https://github.com/hacs-china]
+
+> then install the HACS refer to [https://github.com/hacs-china]
 
 ```
 wget -O - https://hacs.vip/get | bash -
@@ -89,6 +90,37 @@ docker start --net host ID
 
 > refer to [https://www.bilibili.com/video/BV1AT411Y7qM/]
  
+
+> 7. If the Server is down or restarted accidentally, the following steps are needed.
+
+```
+docker ps -a
+
+the below error may occur
+Cannot connect to the Docker daemon at unix:/var/run/docker.sock. Is the docker daemon running?
+
+```
+
+> If the docker images cannot be executed, normally it is because the docker exits but the configuration file is not deleted
+> refer to [https://stackoverflow.com/questions/40524602/error-creating-default-bridge-network-cannot-create-network-docker0-confli]
+> refer to [https://stackoverflow.com/questions/44678725/cannot-connect-to-the-docker-daemon-at-unix-var-run-docker-sock-is-the-docker]
+
+
+
+
+> The solution could be 
+```
+sudo rm -rf /var/lib/docker/network
+sudo systemctl start docker
+
+docker ps -a 
+// get the containner ID
+
+
+docker start container ID
+// start the container
+
+```
 
 
 

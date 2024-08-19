@@ -1,0 +1,34 @@
+import ctypes
+from ctypes import *
+
+dll = ctypes.WinDLL(r"C:\Users\zhanp\Desktop\Crystal-op\JLR_Diag_Key.dll")
+
+#dll = CDLL("C:\\Users\\zhanp\\Desktop\\Crystal-op\\JLR_Diag_Key.dll")
+
+
+#keylist = c_ubyte * 3
+#seedlist = c_ubyte * 3
+
+#keylist_obj = keylist(255,254,45)
+#seedlist_obj = seedlist(0,0,0)
+
+keylist_obj = create_string_buffer(b"\x7a"b"\x4b"b"\x5f",3)
+seedlist_obj = create_string_buffer(b"\xb6"b"\x66"b"\xdb",3)
+print(sizeof(seedlist_obj), repr(seedlist_obj.raw))
+
+seedsize_short_obj = c_ushort(3)
+keysize_short_obj = c_ushort(2)
+print("seed size",seedsize_short_obj.value)
+
+level_uint_obj = c_uint(1)
+level_uint_obj.value = 1
+print("level == ",level_uint_obj.value)
+
+
+
+results=dll.ZLGKey(seedlist_obj,seedsize_short_obj.value,level_uint_obj.value,None,keylist_obj,byref(keysize_short_obj))
+print("results is ",results)
+
+print(sizeof(keylist_obj), repr(keylist_obj.raw))
+
+print("keylist is %02x %02x %02x", keylist_obj[0],keylist_obj[1],keylist_obj[2])

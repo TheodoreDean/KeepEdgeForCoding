@@ -57,13 +57,14 @@ class XiaomiCloudConnector:
         self._session = requests.session()
         self._sign = None
         self._ssecurity = "XYLAH8VafT6cOiqtrzz6kA=="
-        self.userId = "2357571955"
-        self._cUserId = "dIe1850qK1IW3M6L8oZxRE307sI"
+        self.userId = "xxxxxxx"
+        self._cUserId = "dIe1850qK1IW3M6L8oZxRE30xxx"
         self._passToken = None
         self._location = None
         self._code = None
 #        self._serviceToken = None
-        self._serviceToken = "y73Smnf0eLN6R2bR4gjGnAa44mjWhENxieAprRQxllXQ/geHh7S4mcz/S7xf8bXf8XvG/azF17EVI2y4z8aAFFFDOJOkeJv40wfQa8E/fWAvStsKswjD49rx/tpgXBpsO+UgDZ7SGLdXI/EVtDtt1z8JlUPkTOePFfi4g+F6DtC3gvUUsgnBstjpvCOeeFC5EUo0YM+cm+sPriHhggMR+ng7/cmEdUXNIizqL5y5WIE="
+# change to the real service token 
+        self._serviceToken = "xxxSmnf0eLN6R2bR4gjGnAa44mjWhENxieAprRQxllXQ/geHh7S4mcz/S7xf8bXf8XvG/azF17EVI2y4z8aAFFFDOJOkeJv40wfQa8E/fWAvStsKswjD49rx/tpgXBpsO+UgDZ7SGLdXI/EVtDtt1z8JlUPkTOePFfi4g+F6DtC3gvUUsgnBstjpvCOeeFC5EUo0YM+cm+sPriHhggMR+ng7/cmEdUXNIizqL5y5WIE="
 
     def login_step_1(self):
         _LOGGER.debug("login_step_1")
@@ -410,6 +411,7 @@ def main() -> None:
     connector = XiaomiCloudConnector(username, password)
     print_if_interactive("Logging in...")
 #    logged = connector.login()
+# once you modify the code, just bypass the username and password on the second time
     logged = True
 
     if logged:

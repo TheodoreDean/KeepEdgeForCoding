@@ -26,5 +26,5 @@
 
 > There are matched functions marked with Green/yellow/green light.
 
-> 5. Select all the matched functions and revover the bin file.
+> 5. Select all the matched functions, right click the mouse, select the matched functions, and revover the bin file.
 
